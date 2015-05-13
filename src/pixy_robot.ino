@@ -35,6 +35,7 @@ void loop() {
         Serial.println(blocks);
 
         digitalWrite(LED_PIN, HIGH);
+        tracked_block = track_block(blocks);
         follow_block(tracked_block);
       }
     else{
